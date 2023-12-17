@@ -9,8 +9,8 @@ export default function Login() {
 
   const handleSignUp = async () => {
     await supabase.auth.signUp({
-      email: "jon@supabase.com",
-      password: "sup3rs3cur3",
+      email: "jointjm@gmail.com",
+      password: "12341234",
       options: {
         emailRedirectTo: `${location.origin}/auth/callback`,
       },
@@ -20,8 +20,8 @@ export default function Login() {
 
   const handleSignIn = async () => {
     await supabase.auth.signInWithPassword({
-      email: "jon@supabase.com",
-      password: "sup3rs3cur3",
+      email: "jointjm@gmail.com",
+      password: "12341234",
     });
     router.refresh();
   };
